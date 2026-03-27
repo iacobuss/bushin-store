@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bushin Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <!-- CSS do Slick -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Bushin Store</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#sobre">Sobre a loja</a>
+                    </li>
+                    <li>
+                        <a href="#produtos">Produtos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="layout-principal">
+        <section id="sobre">
+            <div class="container">
+                <div class="container-sobre">
+                    <div id="carousel-imagens">
+                        <img src="./images/arcos.webp" alt="Arcos">
+                        <img src="./images/armaduras.webp" alt="Armaduras">
+                        <img src="./images/capacetes.webp" alt="Capacetes">
+                        <img src="./images/espadas.jfif" alt="Espadas">
+                    </div>
+                    <div class="texto-loja">
+                        <h2>Sobre a Loja</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi porro ipsum pariatur possimus non assumenda ducimus minus officia expedita similique odio magnam, velit saepe reiciendis aut eaque natus facere impedit.
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque velit laboriosam autem, omnis rem tempora ab ex commodi eius voluptate hic libero fugiat cum doloribus esse quisquam nobis minima dicta?             
+                        </p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, quo odit? Rem, quidem. Earum, voluptates mollitia? Veritatis impedit earum magnam suscipit repellat deserunt modi enim, adipisci illo officiis aut ipsa?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos">
+            <div class="container">
+                <h2>Produtos</h2>
+                <div class="container-produtos">
+                    <article>
+                            <img src="./images/produto 1.jpg" alt="produto-1" />
+                            <h3>Espada Samurai 1</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quos tempora temporibus exercitationem reprehenderit suscipit</p>
+                            <button type="submit">Adicionar ao carrinho</button>
+                    </article>
+                    <article>
+                            <img src="./images/produto 2.jpg" alt="produto-1" />
+                            <h3>Espada Samurai 2</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quos tempora temporibus exercitationem reprehenderit suscipit</p>
+                            <button type="submit">Adicionar ao carrinho</button>
+                    </article>
+                    <article>
+                            <img src="./images/produto 3.webp" alt="produto-1" />
+                            <h3>Espada Samurai 3</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quos tempora temporibus exercitationem reprehenderit suscipit</p>
+                            <button type="submit">Adicionar ao carrinho</button>
+                    </article>
+                    <article>
+                            <img src="./images/produto 4.webp" alt="produto-1" />
+                            <h3>Espada Samurai 4</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quos tempora temporibus exercitationem reprehenderit suscipit</p>
+                            <button type="submit">Adicionar ao carrinho</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#carousel-imagens').slick({
+                autoplay: true,
+                arrows: false,
+                dots: true
+            });
+        });
+    </script>
+</body>
+</html>

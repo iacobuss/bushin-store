@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilização do Header */
+header {
+    padding: 20px 24px;
+    margin: 0 auto;
+    background-color: rgba(197, 180, 86, 0.651);
+    color: #363535;
+    align-items: center;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+Header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a{
+    color: #363535;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav li:hover {
+    text-decoration: underline;
+}
+
+/* Estilização da aba sobre */
+.container-sobre {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+}
+
+.texto-loja {
+    max-width: 500px;
+    padding-bottom: 100px;
+}
+
+.texto-loja h2 {
+    margin-bottom: 24px;
+    font-size: 28px;
+    color: #363535;
+    border-bottom: 2px solid #363535;
+    padding: 32px 0;
+    font-style: italic;
+}
+
+#carousel-imagens {
+    max-width: 500px; 
+    width: 100%;
+}
+
+#carousel-imagens img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 24px;
+}
+
+.slick-slide {
+    margin-right: 10px;
+}
+
+/* Estilização da seção de produtos */
+.layout-principal .container {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section h2 {
+    margin-left: 56px;
+    margin-bottom: 24px;
+    font-size: 28px;
+    color: #363535;
+    border-bottom: 2px solid #363535;
+    padding: 32px;
+    font-style: italic;
+}
+
+.container-produtos h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.container-produtos button {
+    margin-top: 16px;
+    padding: 8px;
+    color: #fff;
+    background-color: rgb(3, 170, 39);
+    font-size: 18px;
+    width: 100%;
+}
+
+.container-produtos button:hover {
+    background-color: rgb(68, 192, 95);
+    cursor: pointer;
+}
+
+.container-produtos {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    row-gap: 16px;
+}
+
+.container-produtos img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+@media (max-width: 640px) {
+
+
+    header .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    header nav ul {
+        display: flex;
+        gap: 16px;
+        padding: 0;
+    }
+
+    header nav li {
+        margin: 0;
+    }
+
+
+    .container-sobre {
+        flex-direction: column;
+    }
+
+    #carousel-imagens {
+        max-width: 100%;
+    }
+
+    .texto-loja {
+        max-width: 100%;
+        padding-bottom: 0;
+    }
+
+    .container-produtos {
+        grid-template-columns: 1fr;
+    }
+
+    section h2 {
+        margin-left: 0;
+        padding: 16px 0;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+
+    .layout-principal {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    /* REMOVE LIMITES INTERNOS */
+    .layout-principal .container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* SOBRE = COLUNA */
+    .container-sobre {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #carousel-imagens {
+        max-width: 100%;
+    }
+
+    .texto-loja {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    /* PRODUTOS = GRID 2x2 */
+    .container-produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    /* REMOVE ESPAÇOS QUE QUEBRAM */
+    section h2 {
+        margin: 0;
+        padding: 16px 0;
+    }
+}
+
